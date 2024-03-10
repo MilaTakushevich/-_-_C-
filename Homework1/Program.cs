@@ -1,16 +1,43 @@
-﻿Console.WriteLine("Введите число: ");
-Console.WriteLine("Введите второе число: ");
-int number1 = Convert.ToInt32(Console.ReadLine());
-int number2 = Convert.ToInt32(Console.ReadLine());
-if (number1 > number2)
+﻿//Console.WriteLine("Введите число: ");
+//int number1 = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Введите второе число: ");
+//int number2 = Convert.ToInt32(Console.ReadLine());
+//if (number1 > number2)
+//{
+//    Console.WriteLine("Первое больше второго");
+//}
+//else if (number1 > number2)
+//{
+//    Console.WriteLine("Второе больше первого");
+//}
+
+//else
+//{
+//    Console.WriteLine("числа равны");
+//}
+
+
+
+Console.WriteLine("Введите число: ");
+//Считываем введенное пользователем число и преобразуем его в целочисленный тип
+int a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите число: ");
+//Считываем введенное пользователем число и преобразуем его в целочисленный тип
+int b = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите число: ");
+//Считываем введенное пользователем число и преобразуем его в целочисленный тип
+int c = Convert.ToInt32(Console.ReadLine());
+
+int a == max;
+
+if (b > max)
 {
-    Console.WriteLine("Первое больше второго");
+int b == max;
 }
-if (number1 > number2)
+
+if (c < max)
 {
-    Console.WriteLine("Второе больше первого");
+int c == max;
 }
-else
-{
-    Console.WriteLine("числа равны");
-}
+
+Console.WriteLine("max");
