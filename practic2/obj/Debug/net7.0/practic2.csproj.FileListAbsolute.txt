@@ -1,0 +1,14 @@
+C:\Users\Admin\Desktop\Уроки_по_С#\practic2\obj\Debug\net7.0\practic2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\Уроки_по_С#\practic2\obj\Debug\net7.0\practic2.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Уроки_по_С#\practic2\obj\Debug\net7.0\practic2.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Уроки_по_С#\practic2\obj\Debug\net7.0\practic2.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Уроки_по_С#\practic2\bin\Debug\net7.0\practic2.exe
+C:\Users\Admin\Desktop\Уроки_по_С#\practic2\bin\Debug\net7.0\practic2.deps.json
+C:\Users\Admin\Desktop\Уроки_по_С#\practic2\bin\Debug\net7.0\practic2.runtimeconfig.json
+C:\Users\Admin\Desktop\Уроки_по_С#\practic2\bin\Debug\net7.0\practic2.dll
+C:\Users\Admin\Desktop\Уроки_по_С#\practic2\bin\Debug\net7.0\practic2.pdb
+C:\Users\Admin\Desktop\Уроки_по_С#\practic2\obj\Debug\net7.0\practic2.dll
+C:\Users\Admin\Desktop\Уроки_по_С#\practic2\obj\Debug\net7.0\refint\practic2.dll
+C:\Users\Admin\Desktop\Уроки_по_С#\practic2\obj\Debug\net7.0\practic2.pdb
+C:\Users\Admin\Desktop\Уроки_по_С#\practic2\obj\Debug\net7.0\practic2.genruntimeconfig.cache
+C:\Users\Admin\Desktop\Уроки_по_С#\practic2\obj\Debug\net7.0\ref\practic2.dll
