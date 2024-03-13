@@ -40,12 +40,12 @@
 
 
 // Выводим приглашение для ввода двузначного числа
-        Console.WriteLine("Введите двузначное число: ");
+//        Console.WriteLine("Введите двузначное число: ");
 // Считываем введенное пользователем число и преобразуем его в целое число
-int number = Convert.ToInt32(Console.ReadLine());
+//int number = Convert.ToInt32(Console.ReadLine());
         
 // Проверяем, является ли введенное число двузначным
-        if (number > 10 && number < 100)
+/*        if (number > 10 && number < 100)
         {
             // Разбиваем число на десятки и единицы
             int dec = number / 10; // десятки
@@ -68,12 +68,34 @@ int number = Convert.ToInt32(Console.ReadLine());
         }
 
 // Задача 4: Напишите программу, которая на вход принимает натуральное число N, а на выходе показывает его цифры через запятую.
+*/
+//Console.WriteLine("Введите натуральное число:");
+ //       int number = Convert.ToInt32(Console.ReadLine());
 
- // Выводим первую цифру
+        // Проверяем, является ли введенное значение числом, и оно больше 0
+       /* while (!int.TryParse(Console.ReadLine(), out number) || number <= 0)
+        {
+            Console.WriteLine("Ошибка. Введите натуральное число:");
+        }
+
+        // Переводим число в строку для удобства работы с ним посимвольно
+        string numberStr = number.ToString();
+
+        // Выводим первую цифру
         Console.Write(numberStr[0]);
 
         // Выводим остальные цифры с запятыми
         for (int i = 1; i < numberStr.Length; i++)
         {
-                     Console.Write(", " + numberStr[i]);
+            Console.Write(", " + numberStr[i]);
+        }
+    */
+
+    Console.WriteLine("Введите натуральное число:");
+        int number = Convert.ToInt32(Console.ReadLine());
+        string numberStr = number.ToString();
+        Console.Write(numberStr[0]);
+        for (int i = 1; i < numberStr.Length; i++)
+        {
+            Console.Write(", " + numberStr[i]);
         }
