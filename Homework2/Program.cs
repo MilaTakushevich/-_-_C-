@@ -68,3 +68,12 @@ int number = Convert.ToInt32(Console.ReadLine());
         }
 
 // Задача 4: Напишите программу, которая на вход принимает натуральное число N, а на выходе показывает его цифры через запятую.
+
+ // Выводим первую цифру
+        Console.Write(numberStr[0]);
+
+        // Выводим остальные цифры с запятыми
+        for (int i = 1; i < numberStr.Length; i++)
+        {
+                     Console.Write(", " + numberStr[i]);
+        }
