@@ -35,6 +35,9 @@ else if(x > 0 && y < 0)
 {
     Console.WriteLine("Четвертый номер координатной четверти плоскости");
 }
+else 
+    Console.WriteLine("Точка находится на оси координат");
+
 
 // Задача 3: Напишите программу, которая принимает на вход целое число из отрезка [10, 99] и показывает наибольшую цифру числа.
  Выводим приглашение для ввода двузначного числа
@@ -64,8 +67,20 @@ else
         Console.WriteLine("Ваше число не двузначное");
     }
 
+вариант 2(как в автоответах)
+
+Console.Write("Введите число из отрезка [10, 99]: "); 
+int number = Convert.ToInt32(Console.ReadLine()); 
+
+int firstDigit = number / 10; 
+int secondDigit = number % 10; 
+
+int maxDigit = firstDigit > secondDigit ? firstDigit : secondDigit; 
+условие ? значение_если_истина : значение_если_ложь;
+Console.WriteLine(maxDigit);
+
 // Задача 4: Напишите программу, которая на вход принимает натуральное число N, а на выходе показывает его цифры через запятую.    
-*/
+
 
 Console.WriteLine("Введите натуральное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
@@ -75,4 +90,23 @@ int number = Convert.ToInt32(Console.ReadLine());
         {
             Console.Write(", " + numberStr[i]);
         }
-        
+
+*/
+
+Console.Write("Введите натуральное число N: "); 
+int N = Convert.ToInt32(Console.ReadLine()); 
+
+ 
+    while (N > 0) 
+    { 
+        int currentDigit = N % 10; 
+        N /= 10; 
+        if (N > 0) 
+{  
+    Console.Write(currentDigit + ","); 
+}
+else 
+{
+    Console.WriteLine(currentDigit); 
+}
+    }
