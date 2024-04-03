@@ -25,3 +25,34 @@ string GetStringFromArray(char[,] array)
     return result;
 }
 
+Задача 2: Задайте строку, содержащую латинские буквы в обоих регистрах. Сформируйте строку, в которой все заглавные буквы заменены на строчные.
+
+string inputString = "HowareYOU";
+string resultString = ConvertToLowerCase(inputString);
+
+Console.WriteLine("Исходная строка: " + inputString);
+Console.WriteLine("Строка с замененными заглавными буквами на строчные: " + resultString);
+    
+string ConvertToLowerCase(string input)
+{
+    string result = "";
+
+    foreach (char c in input)
+    {
+        if (char.IsUpper(c))
+        {
+            result += char.ToLower(c);
+        }
+        else
+        {
+            result += c;
+        }
+    }
+
+    return result;
+}
+*/
+Задача 3: Задайте произвольную строку. Выясните, является ли она палиндромом.
+
+Задача 4*(не обязательная): Задайте строку, состоящую из слов, разделенных пробелами. Сформировать строку, в которой слова расположены в обратном порядке. В полученной строке слова должны быть также разделены пробелами.
+*/
