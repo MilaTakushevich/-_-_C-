@@ -53,7 +53,7 @@ string ConvertToLowerCase(string input)
 }
 
 Задача 3: Задайте произвольную строку. Выясните, является ли она палиндромом.
-*/
+
 string inputString = "radar";
         bool isPalindrome = IsPalindrome(inputString);
         PrintResult(inputString, isPalindrome);
@@ -81,6 +81,37 @@ void PrintResult(string input, bool isPalindrome)
             Console.WriteLine("Строка \"" + input + "\" не является палиндромом.");
         }
     }
-/*
+
 Задача 4*(не обязательная): Задайте строку, состоящую из слов, разделенных пробелами. Сформировать строку, в которой слова расположены в обратном порядке. В полученной строке слова должны быть также разделены пробелами.
 */
+string str = "Она несла в руках отвратительные, тревожные желтые цветы. "
+            +"Черт их знает, как их зовут, но они первые почему-то появляются в Москве."
+            +" И эти цветы очень отчетливо выделялись на черном ее весеннем пальто. Она"
+            +" несла желтые цветы! Нехороший цвет. Она повернула с Тверской в переулок и"
+            +" тут обернулась. Ну, Тверскую вы знаете?";
+
+string reversedString = ReverseWords(str);
+
+Console.WriteLine("Исходная строка: " + str);
+Console.WriteLine("Строка с обратным расположением слов: " + reversedString);
+
+
+static string ReverseWords(string input)
+{
+    string[] words = input.Split(' '); // Разделяем строку на слова по пробелам
+    string result = ""; // Создаем пустую строку 
+        
+    for (int i = words.Length - 1; i >= 0; i--) // Создаем новую строку для хранения результата
+    {
+        result += words[i];
+
+        if (i != 0) // Добавляем пробел после каждого слова, кроме последнего
+        {
+            result += " ";
+        }
+    }
+
+    return result;
+}
+
+
