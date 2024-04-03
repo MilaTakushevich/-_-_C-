@@ -54,7 +54,7 @@ string ConvertToLowerCase(string input)
 
 Задача 3: Задайте произвольную строку. Выясните, является ли она палиндромом.
 */
-string inputString = "rada";
+string inputString = "radar";
         bool isPalindrome = IsPalindrome(inputString);
         PrintResult(inputString, isPalindrome);
     
