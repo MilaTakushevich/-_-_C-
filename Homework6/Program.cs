@@ -51,8 +51,36 @@ string ConvertToLowerCase(string input)
 
     return result;
 }
-*/
-Задача 3: Задайте произвольную строку. Выясните, является ли она палиндромом.
 
+Задача 3: Задайте произвольную строку. Выясните, является ли она палиндромом.
+*/
+string inputString = "rada";
+        bool isPalindrome = IsPalindrome(inputString);
+        PrintResult(inputString, isPalindrome);
+    
+
+bool IsPalindrome(string input)
+    {
+        string reversedString = ""; 
+
+        for (int i = input.Length - 1; i >= 0; i--) 
+        {
+            reversedString += input[i];
+        }
+        return input == reversedString;  
+    }   
+
+void PrintResult(string input, bool isPalindrome)
+    {
+        if (isPalindrome)
+        {
+            Console.WriteLine("Строка \"" + input + "\" является палиндромом.");
+        }
+        else
+        {
+            Console.WriteLine("Строка \"" + input + "\" не является палиндромом.");
+        }
+    }
+/*
 Задача 4*(не обязательная): Задайте строку, состоящую из слов, разделенных пробелами. Сформировать строку, в которой слова расположены в обратном порядке. В полученной строке слова должны быть также разделены пробелами.
 */
