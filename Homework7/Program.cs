@@ -18,7 +18,7 @@ void PrintNumbers(int M, int N)
 
 Задача 2: Напишите программу вычисления функции Аккермана с помощью рекурсии. Даны два неотрицательных числа m и n.
 Решение:
-*/
+
 int m = 2;
 int n = 3;
 
@@ -42,6 +42,17 @@ int AckermannFunction(int m, int n)
     }
 }
 
-/*
+
 Задача 3: Задайте произвольный массив. Выведете его элементы, начиная с конца. Использовать рекурсию, не использовать циклы.
 */
+int[] array = { 1, 2, 3, 4, 5 };
+PrintArrayReversed(array, array.Length - 1);
+
+void PrintArrayReversed(int[] array, int index)
+{
+    if (index >= 0)
+    {
+        Console.WriteLine(array[index]); // Выводим элемент массива
+        PrintArrayReversed(array, index - 1); // Рекурсивно вызываем функцию для предыдущего элемента
+    }
+}
